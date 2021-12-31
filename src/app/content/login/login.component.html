@@ -1,0 +1,42 @@
+<p-progressBar *ngIf="loading" mode="indeterminate"></p-progressBar>
+<div class="d-flex flex-column bd-highlight  animate-fadein h-90">
+    <div class="d-flex flex-column mb-auto pt-3">
+        <h2 class="text-bold-md mt-1">
+            What's Your <br>Telephone number ?
+        </h2>
+        <h6 class="text-bold-md pt-3">
+            Welcome to Castcle
+        </h6>
+    </div>
+    <div class="d-flex mb-auto flex-column">
+        <div class="row justify-content-center pl-3 pr-3">
+            <div class="col-4 pl-0 pr-0" style="z-index: 99;">
+
+                <p-dropdown [options]="country" optionLabel="name" [(ngModel)]="selectCountry"
+                    class="border-right-none pr-0 pl-0 w-100">
+                </p-dropdown>
+            </div>
+            <div class="col-8 pl-0 pr-0">
+                <span class="p-input-icon-left">
+                    <i class="text-white" style="margin-top: -0.75rem;font-style: normal;">
+                        {{selectCountry?.dialCode}}
+                    </i>
+                    <input maxlength="9" [(ngModel)]="telNumber" placeholder="enter your number"
+                        class='border-left-none w-100' style="padding-left: 4rem;" type="text" appNumberInput
+                        pInputText />
+                </span>
+            </div>
+        </div>
+        <p class="d-flex sub-text mt-4 text-sm">
+            You'll use this email when you login and when you lose your password.
+        </p>
+    </div>
+
+    <div class="d-flex bd-highlight mt-5 mb-4">
+        <button [disabled]="telNumber.length < 9" (click)="goToOtpPage()" class=" button-primary w-100 ">
+            <h5 class="mb-0">
+                Sent OTP
+            </h5>
+        </button>
+    </div>
+</div>

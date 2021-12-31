@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  httpUrl: 'https://api-dev.castcle.com',
 };

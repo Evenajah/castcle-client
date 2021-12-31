@@ -1,0 +1,24 @@
+a {
+  color: #01d2ff;
+  cursor: pointer;
+}
+:host ::ng-deep .otp-input {
+  border-bottom: solid 2px #fff !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+  background: transparent;
+  color: #fff;
+}
+:host ::ng-deep input:focus-visible {
+  outline: none !important;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  :host ::ng-deep .otp-input {
+    width: 3rem !important;
+    font-size: 2rem !important;
+    height: 3rem !important;
+  }
+}

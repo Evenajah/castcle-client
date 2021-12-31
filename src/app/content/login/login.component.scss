@@ -1,0 +1,54 @@
+::ng-deep .p-dropdown,
+.p-inputtext {
+  background: #23262b 0% 0% no-repeat padding-box !important;
+  border: 1px solid #000000;
+  height: 66px;
+  font-family: "Kanit", sans-serif;
+  width: 100%;
+}
+:host span > ::ng-deep .p-inputtext:enabled:focus,
+.p-dropdown:enabled:focus {
+  border: 1px solid #000000;
+  box-shadow: none;
+}
+::ng-deep .p-dropdown:hover {
+  border: 1px solid #000000 !important;
+}
+span > ::ng-deep .p-inputtext:hover {
+  border: 1px solid #000000;
+}
+::ng-deep.p-dropdown-items {
+  background: #23262b 0% 0% no-repeat padding-box !important;
+}
+::ng-deep .p-dropdown-item,
+.p-dropdown-items {
+  color: #fff !important;
+  background: #23262b 0% 0% no-repeat padding-box !important;
+}
+::ng-deep .p-dropdown-label {
+  display: flex !important;
+  align-items: center !important;
+  padding-left: 1rem;
+  padding-right: 0rem;
+}
+::ng-deep .p-dropdown-trigger {
+  width: 2rem !important;
+}
+
+.border-right-none > ::ng-deep .p-dropdown,
+.p-inputtext {
+  border-radius: 8px 0px 0px 8px !important;
+}
+
+.border-left-none > ::ng-deep .p-dropdown,
+.p-inputtext {
+  border-radius: 0px 8px 8px 0px !important;
+}
+
+::ng-deep .p-inputtext {
+  color: #fff !important;
+}
+
+::ng-deep .p-progressbar {
+  height: 0.2rem !important;
+}

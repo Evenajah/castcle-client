@@ -1,0 +1,35 @@
+<div class="d-flex flex-column bd-highlight  animate-fadein h-90">
+    <div class="d-flex flex-column mb-auto pt-5">
+        <h2 class="text-bold-md mt-1 text-center">
+            Enter 6 digit code
+        </h2>
+    </div>
+    <div class="d-flex mb-auto flex-column align-items-center" style="row-gap: 0.5rem;">
+        <div class="d-flex">
+            <h6>Your code was sent to {{telNumber}}</h6>
+        </div>
+        <div class="d-flex">
+            <h6>รหัสชุด OTP {{otpKey}}</h6>
+        </div>
+        <div class="d-flex mb-4 mt-4">
+            <ng-otp-input (onInputChange)="onOtpChange($event)" #ngOtpInput [config]="{length:6,allowNumbersOnly:true}">
+            </ng-otp-input>
+        </div>
+
+        <div class="d-flex">
+            <h6>Don't receive it yet? <a class="ml-2" (click)="clearOtp()">Send again</a></h6>
+        </div>
+
+        <div class="d-flex">
+            <h6 style="color:#6A6C6F">Resend Code {{timerResendCode}}s</h6>
+        </div>
+    </div>
+
+    <div class="d-flex bd-highlight mt-5 mb-4">
+        <button [disabled]="otpVal.length < 6" class="button-primary w-100">
+            <h5 class="mb-0">
+                Next
+            </h5>
+        </button>
+    </div>
+</div>
