@@ -21,6 +21,23 @@ export class OtpComponent implements OnInit {
 
   ngOnInit(): void {
     this.generateOtpKey();
+    this.setTelNumber();
+    this.intervalSendOtp();
+  }
+
+  private intervalSendOtp() {
+    interval(1000)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(() => {
+        if (this.timerResendCode === 0) {
+          this.clearOtp();
+          return;
+        }
+        this.timerResendCode -= 1;
+      });
+  }
+
+  private setTelNumber() {
     this.storeService
       .getTelNumber()
       .pipe(
@@ -35,16 +52,6 @@ export class OtpComponent implements OnInit {
       )
       .subscribe((tel) => {
         this.telNumber = tel;
-      });
-
-    interval(1000)
-      .pipe(takeUntil(this.destroy$))
-      .subscribe(() => {
-        if (this.timerResendCode === 0) {
-          this.clearOtp();
-          return;
-        }
-        this.timerResendCode -= 1;
       });
   }
 
