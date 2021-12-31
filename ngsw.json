@@ -1,0 +1,101 @@
+{
+  "configVersion": 1,
+  "timestamp": 1640939901015,
+  "index": "/castcle-client/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/castcle-client/116.1dcdf07ab83bb4759987.js",
+        "/castcle-client/favicon.ico",
+        "/castcle-client/index.html",
+        "/castcle-client/main.8d9b31ab8f40a9945900.js",
+        "/castcle-client/manifest.webmanifest",
+        "/castcle-client/polyfills.7365b50933bac8120601.js",
+        "/castcle-client/runtime.5745cef16be0bcb55d26.js",
+        "/castcle-client/styles.5788320ec2124b2c7ec6.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/castcle-client/assets/icons/icon-128x128.png",
+        "/castcle-client/assets/icons/icon-144x144.png",
+        "/castcle-client/assets/icons/icon-152x152.png",
+        "/castcle-client/assets/icons/icon-192x192.png",
+        "/castcle-client/assets/icons/icon-384x384.png",
+        "/castcle-client/assets/icons/icon-512x512.png",
+        "/castcle-client/assets/icons/icon-72x72.png",
+        "/castcle-client/assets/icons/icon-96x96.png",
+        "/castcle-client/assets/images/avatars.png",
+        "/castcle-client/assets/images/avatars.svg",
+        "/castcle-client/assets/images/back_arrow.png",
+        "/castcle-client/assets/images/back_arrow.svg",
+        "/castcle-client/color.6441e63a57ccc5105bad.png",
+        "/castcle-client/hue.f8505bd4d6f3e3aa435b.png",
+        "/castcle-client/primeicons.449aa8c65cdc5c2a8686.woff",
+        "/castcle-client/primeicons.91bacab1f083f2795272.ttf",
+        "/castcle-client/primeicons.c6e2053303524e39530c.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/castcle-client/116.1dcdf07ab83bb4759987.js": "23bfee0fc174dd66199b3d4788185db6d6888fac",
+    "/castcle-client/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/castcle-client/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/castcle-client/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/castcle-client/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/castcle-client/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/castcle-client/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/castcle-client/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/castcle-client/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/castcle-client/assets/images/avatars.png": "ea2fd3a32f004a3345d8a69d2b11b25516a3f76b",
+    "/castcle-client/assets/images/avatars.svg": "a8221dd71b94b234575862d9f509243b1187da12",
+    "/castcle-client/assets/images/back_arrow.png": "47c01558234103f134b61f04737ad423457df7cc",
+    "/castcle-client/assets/images/back_arrow.svg": "327db9e6fadc16576531598f27339077213ae574",
+    "/castcle-client/color.6441e63a57ccc5105bad.png": "ff4c4bcb2207891b292f544edb4da9d2df5d45cf",
+    "/castcle-client/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/castcle-client/hue.f8505bd4d6f3e3aa435b.png": "f81ae627637a684614aa726e206c73ce099a01fd",
+    "/castcle-client/index.html": "4e65e0c69874cc012b8ac5ba627c6f024bc6c77c",
+    "/castcle-client/main.8d9b31ab8f40a9945900.js": "401efab71eb13ce4c7610a183541bfbe2faa4c0a",
+    "/castcle-client/manifest.webmanifest": "d76cf661a966c87be608df61264ea99db4dc9a70",
+    "/castcle-client/polyfills.7365b50933bac8120601.js": "414f158973236cb67bf1375e455fac26ac723d4f",
+    "/castcle-client/primeicons.449aa8c65cdc5c2a8686.woff": "21e477ea19e15b66344bcc23b3fbb2161092a707",
+    "/castcle-client/primeicons.91bacab1f083f2795272.ttf": "e6c86ca90a9fb4282fb35523d56fde00e78a1416",
+    "/castcle-client/primeicons.c6e2053303524e39530c.svg": "621775b2ec555fd2dd152a24390cf6dfeee168b1",
+    "/castcle-client/runtime.5745cef16be0bcb55d26.js": "f58307c4c0ae92aa992ca1721d442554fb1ecbea",
+    "/castcle-client/styles.5788320ec2124b2c7ec6.css": "eabb9b5f2c3bf2d33be92798d60cc405ca2ab26c"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
