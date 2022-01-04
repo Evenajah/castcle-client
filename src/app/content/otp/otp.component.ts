@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import { BehaviorSubject, interval, Subject } from 'rxjs';
+import { interval, Subject } from 'rxjs';
 import { filter, takeUntil } from 'rxjs/operators';
 import { StoreService } from 'src/app/share/service/store.service';
 
