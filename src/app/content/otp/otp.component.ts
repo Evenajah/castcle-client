@@ -16,6 +16,7 @@ export class OtpComponent implements OnInit {
   timerResendCode: number = 60;
   @ViewChild('ngOtpInput', { static: false }) ngOtpInput: any;
   otpVal: string = '';
+  showSendBtn: boolean = false;
 
   constructor(private storeService: StoreService, public router: Router) {}
 
@@ -30,6 +31,7 @@ export class OtpComponent implements OnInit {
       .pipe(takeUntil(this.destroy$))
       .subscribe(() => {
         if (this.timerResendCode === 0) {
+          this.showSendBtn = true;
           this.clearOtp();
           return;
         }
@@ -59,6 +61,10 @@ export class OtpComponent implements OnInit {
     this.otpKey = Math.random().toString(36).slice(6);
   }
 
+  senAgainClick() {
+    this.showSendBtn = !this.showSendBtn;
+    this.clearOtp();
+  }
   clearOtp() {
     this.generateOtpKey();
     this.ngOtpInput.setValue('');

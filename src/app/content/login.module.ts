@@ -11,6 +11,7 @@ import { OtpComponent } from './otp/otp.component';
 import { CountryService } from './service/country.service';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { NgOtpInputModule } from 'ng-otp-input';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [HomeComponent, LoginComponent, OtpComponent],
   imports: [
@@ -19,6 +20,8 @@ import { NgOtpInputModule } from 'ng-otp-input';
     LoginRoutingModule,
     DropdownModule,
     InputNumberModule,
+    ReactiveFormsModule,
+    FormsModule,
     SharedModule,
     ProgressBarModule,
     NgOtpInputModule,

@@ -11,15 +11,14 @@
     <div class="d-flex mb-auto flex-column">
         <div class="row justify-content-center pl-3 pr-3">
             <div class="col-4 pl-0 pr-0" style="z-index: 99;">
-
-                <p-dropdown [options]="country" optionLabel="name" [(ngModel)]="selectCountry"
+                <p-dropdown [options]="country" optionLabel="name" [formControl]="selectCountry"
                     class="border-right-none pr-0 pl-0 w-100">
                 </p-dropdown>
             </div>
             <div class="col-8 pl-0 pr-0">
                 <span class="p-input-icon-left">
                     <i class="text-white" style="margin-top: -0.75rem;font-style: normal;">
-                        {{selectCountry?.dialCode}}
+                        {{selectCountry?.value.dialCode}}
                     </i>
                     <input maxlength="9" [(ngModel)]="telNumber" placeholder="enter your number"
                         class='border-left-none w-100' style="padding-left: 4rem;" type="text" appNumberInput
