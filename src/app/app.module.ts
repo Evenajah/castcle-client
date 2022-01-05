@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './share/shared.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { InterceptorService } from './share/service/interceptor.service';
+import { StoreService } from './share/service/store.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,7 +26,14 @@ import { environment } from '../environments/environment';
       registrationStrategy: 'registerWhenStable:30000',
     }),
   ],
-
+  providers: [
+    StoreService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: InterceptorService,
+      multi: true,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -22,10 +22,11 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     InputNumberModule,
     ReactiveFormsModule,
     FormsModule,
-    SharedModule,
+    // SharedModule,
     ProgressBarModule,
     NgOtpInputModule,
   ],
+
   exports: [HomeComponent, LoginComponent, OtpComponent],
   providers: [CountryService],
 })
