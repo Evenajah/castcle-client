@@ -13,7 +13,7 @@ export class OtpComponent implements OnInit {
   telNumber: string = '';
   private destroy$ = new Subject<void>();
   otpKey: string = '';
-  timerResendCode: number = 5;
+  timerResendCode: number = 60;
   @ViewChild('ngOtpInput', { static: false }) ngOtpInput: any;
   otpVal: string = '';
   showSendBtn: boolean = false;
@@ -61,14 +61,14 @@ export class OtpComponent implements OnInit {
     this.otpKey = Math.random().toString(36).slice(6);
   }
 
-  senAgainClick() {
+  sendAgainClick() {
     this.showSendBtn = !this.showSendBtn;
     this.clearOtp();
   }
   clearOtp() {
     this.generateOtpKey();
     this.ngOtpInput.setValue('');
-    this.timerResendCode = 5;
+    this.timerResendCode = 60;
   }
 
   onOtpChange(otp: string) {
